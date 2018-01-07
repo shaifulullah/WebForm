@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebFormPart12.aspx">Go to part 12</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" target="_blank" runat="server" NavigateUrl="~/WebFormPart12.aspx">Go to part 12</asp:HyperLink>
     
     </div>
     </form>
