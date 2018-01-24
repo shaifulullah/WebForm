@@ -1,0 +1,21 @@
+﻿<Window x:Class="SampleApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:StudentDependencyProperty x:Key="StudentProperty"></local:StudentDependencyProperty>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Enter Name" Grid.Row="0" VerticalAlignment="Center"></TextBlock>
+        <TextBox Name="SampleTxtBox" Text="{Binding Path=StudentName,Source={StaticResource StudentProperty}}" Height="25" Width="150" HorizontalAlignment="Center"></TextBox>
+        <Button Name="SampleBUtton" Content="ClickMe" Width="150" Height="25" Grid.Row="1" Click="SampleBUtton_Click"></Button>
+    </Grid>
+</Window>
