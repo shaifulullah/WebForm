@@ -210,6 +210,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="WebFormPart15.aspx" />
     <Content Include="WebFormPart12.aspx" />
     <Content Include="WebFormPart13.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -417,6 +418,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormPart15.aspx.cs">
+      <DependentUpon>WebFormPart15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormPart15.aspx.designer.cs">
+      <DependentUpon>WebFormPart15.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormPart12.aspx.cs">
       <DependentUpon>WebFormPart12.aspx</DependentUpon>
